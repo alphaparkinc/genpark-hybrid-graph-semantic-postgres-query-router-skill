@@ -1,0 +1,35 @@
+{
+  "name": "genpark-hybrid-graph-semantic-postgres-query-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hybrid tabular, graph, and semantic vector query router over Postgres-native databases for AI agent context retrieval.",
+  "author": "genpark",
+  "category": "engineering",
+  "tags": [
+    "hybrid-query",
+    "graph-database",
+    "semantic-search",
+    "postgres-ai",
+    "polygres"
+  ],
+  "inputs": {
+    "natural_language_query": {
+      "type": "string"
+    },
+    "schema_context": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "query_plan": {
+      "type": "object"
+    },
+    "result_rows": {
+      "type": "array"
+    },
+    "query_type_used": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
